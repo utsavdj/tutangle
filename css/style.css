@@ -1,0 +1,640 @@
+/*-----------------------------------------------------------------------------------------*/
+/*Mobile View*/
+
+/*-----------------------------------------------------------------------------------------*/
+/*common styles*/
+* {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.subscribed, .subscribed a {
+    color: #92b056;
+}
+
+.entry-comment, .entry-comment a, .author-name, .author-name a,
+.topic, .topic a {
+    color: #2f9eaf;
+}
+
+.hot-topic, .hot-topic a {
+    color: #d43e1b;
+}
+
+.hot-topic, .entry-comment {
+    text-transform: uppercase;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*header styles*/
+
+.header-top-left img{
+    width: 100%;
+}
+
+.username {
+    float: right;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 15px;
+}
+
+.user-menu {
+    float: right;
+    padding-top: 5px;
+    line-height: 10px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.user-menu li {
+    float: left;
+    width: auto;
+    list-style: none;
+    padding: 0 5px;
+    font-size: 11px;
+    border-left: 1px solid #101010;
+}
+
+.user-menu li a {
+    color: #101010;
+}
+
+.user-menu li:last-child {
+    padding-right: 0;
+}
+
+.user-menu li:first-child {
+    border-left: none;
+}
+
+.search-form{
+    display: none;
+}
+
+.mobile-search-form {
+    clear: both;
+    margin-bottom: 15px;
+}
+
+.mobile-search-form input[type="text"] {
+    border: none;
+    background: url("../images/search-input.png") no-repeat;
+    background-size: 100% 100%;
+    width: 73%;
+    height: 20px;
+    padding: 0 8px;
+    outline: none;
+    font-size: 9px;
+    color: #8b9a9d;
+}
+
+.mobile-search-form input[type="submit"] {
+    width: 53px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    background: url("../images/search-btn-frame.png") #275056;
+    font-size: 9px;
+    margin-left: 4px;
+    outline: none;
+}
+
+.mobile-menu a{
+    background: url("../images/list.png") no-repeat left;
+    background-size: 100% 100%;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    float: left;
+    line-height: 40px;
+}
+
+.mobile-menu-nav{
+    display: none;
+    background-color: #f5f5f5;
+}
+
+.mobile-menu-nav li{
+    line-height: 30px;
+    font-size: 13px;
+    border-top: 1px solid #ffffff;
+}
+
+.mobile-menu-nav a{
+    color: #101010;
+    padding: 0 15px;
+    display: block;
+}
+
+.mobile-menu-nav a:hover{
+    background-color: #ffffff;
+}
+
+.header-bottom-right li {
+    line-height: 40px;
+    float: left;
+    width: auto;
+    list-style: none;
+}
+
+.header-bottom-right li {
+    color: #AAAAAA;
+}
+
+.header-bottom-right li {
+    font-size: 10px;
+    background-position: left;
+    margin: 0 5px;
+    padding-left: 23px;
+}
+
+.header-bottom-right li:last-child {
+    margin-right: 0;
+}
+
+.header-bottom-right li a {
+    display: block;
+}
+
+.invites {
+    background: url("../images/invites.png") no-repeat;
+}
+
+.requests {
+    background: url("../images/requests.png") no-repeat;
+}
+
+.header-bottom-right li.active a {
+    padding-left: 23px;
+    color: #101010;
+}
+
+.header-bottom-right li.active {
+    padding-left: 0;
+}
+
+.main-container h1 {
+    line-height: 0.8;
+    font-size: 29px;
+    margin-bottom: 15px;
+}
+
+.common-background{
+    background: none;
+}
+
+.tab-headers {
+    display: none;
+}
+
+.tabs li{
+    float: left;
+    width: 22%;
+    list-style: none;
+    font-size: 7px;
+    text-align: center;
+    line-height: 28px;
+    position: relative;
+    margin: 0 1.5%;
+}
+
+.tabs li a{
+    background: url(../images/tab-grey.png) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+.tabs li a:hover, .tabs .active a{
+    background: url(../images/tab-blue.png) no-repeat;
+    background-size: 100% 100%;
+    color: #ffffff;
+}
+
+.tabs li:hover a, .tabs .active a {
+    color: white;
+}
+
+.tabs li a {
+    display: block;
+    color: #101010;
+}
+
+/*Since this is static image so, empty div has been used with background*/
+.tabs-bottom-border {
+    background: url("../images/blue-border.png") repeat;
+    height: 2px;
+    clear: both;
+}
+
+.member {
+    padding: 15px 0;
+}
+
+.member-image{
+    position: relative;
+    float: left;
+}
+
+/*Since this is static image so, empty div has been used with background*/
+.member-image-frame {
+    position: absolute;
+    background: url("../images/member-frame.png");
+    width: 70px;
+    height: 70px;
+}
+
+.member-details h2 {
+    font-size: 13px;
+}
+
+.member-details h2 a {
+    color: #101010;
+}
+
+.member-details strong, .member-details h2 {
+    margin-bottom: 8px;
+}
+
+.member-details strong {
+    display: block;
+}
+
+.member-details {
+    font-size: 11px;
+    float: left;
+    width: 70%;
+    padding-left: 15px;
+}
+
+.member-details li {
+    float: left;
+    width: auto;
+    list-style: none;
+    border-left: 1px solid #101010;
+    padding: 0 5px;
+}
+
+.member-details li:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+.member-details ul:before, .member-details ul:after, .member:before, .member:after,
+.tabs-bottom-border:before, .tabs:after{
+    content: "";
+    display: table;
+}
+
+.member-details ul:after, .member:after, .tabs:after {
+    clear: both;
+}
+
+.member-details ul {
+    zoom: 1; /*IE 6& 7*/
+    margin-bottom: 5px;
+}
+
+.member-details li, .member-details p {
+    color: #616161;
+}
+
+/*Since this is static image so, empty div has been used with background*/
+.member-bottom-border {
+    background: url("../images/grey-border.png") repeat;
+    height: 1px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*footer styles*/
+
+.footer-menu li {
+    float: left;
+    width: auto;
+    list-style: none;
+    line-height: 45px;
+    font-size: 8px;
+    margin: 0 2px;
+    background: url(../images/footer-circle.png) no-repeat left;
+    padding-left: 10px;
+}
+
+.footer-menu li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    background: none;
+}
+
+.footer, .footer-menu li a {
+    color: #a3a3a3;
+}
+
+.footer-copyright p {
+    font-size: 9px;
+    float: left;
+    line-height: 45px;
+}
+
+@media (min-width: 321px) {
+    .footer-menu li {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 332px) {
+    .footer-menu li {
+        margin: 0 3px;
+    }
+
+    .footer-menu li {
+        padding-left: 11px;
+    }
+}
+
+@media (min-width: 338px) {
+
+    .tabs li{
+        width: 21%;
+        font-size: 8px;
+        margin: 0 2%;
+    }
+}
+
+@media (min-width: 360px) {
+
+    .tabs li{
+        width: 20%;
+        font-size: 8px;
+        margin: 0 2.5%;
+    }
+}
+
+@media (min-width: 370px) {
+
+    .tabs li{
+        width: 23%;
+        font-size: 8px;
+        margin: 0 1%;
+    }
+}
+
+@media (min-width: 387px) {
+    .mobile-search-form input[type="text"] {
+        width: 276px;
+    }
+
+    .header-top-left img{
+        width: 190px;
+    }
+
+    .tabs li{
+        width: 24%;
+        font-size: 9px;
+        margin: 0 0.5%;
+    }
+
+    .member-details{
+        width: 75%;
+    }
+}
+
+@media (min-width: 473px) {
+    .member-details{
+        width: 80%;
+    }
+}
+
+@media (min-width: 527px) {
+    .tabs li{
+        width: 23%;
+        margin: 5px 1% 0 1%;
+    }
+}
+
+@media (min-width: 598px) {
+    .member-details{
+        width: 85%;
+    }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*Tablet View*/
+
+
+@media (min-width: 768px) {
+
+    .header-top-left a{
+        float: left;
+    }
+
+    .header-top-left img{
+        width: 207px
+    }
+
+    .mobile-search-form{
+        display: none;
+    }
+
+    .search-form {
+        display: block;
+        margin: 0 14px;
+        line-height: 85px;
+        float: left;
+        width: auto;
+    }
+
+    .search-form input[type="text"] {
+        border: none;
+        background: url("../images/search-input-frame.png") no-repeat #caeff7;
+        background-size: 100% 100%;
+        width: 260px;
+        height: 20px;
+        padding: 0 8px;
+        outline: none;
+        font-size: 9px;
+        color: #8b9a9d;
+    }
+
+    .search-form input[type="submit"] {
+        width: 53px;
+        height: 20px;
+        cursor: pointer;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        background: url("../images/search-btn-frame.png") #275056;
+        font-size: 9px;
+        margin-left: 4px;
+        outline: none;
+    }
+
+    .tab-headers {
+        display: block;
+        font-size: 13px;
+        background-color: #f5f5f5;
+        position: relative;
+    }
+
+    .all-entries-tab {
+        float: left;
+    }
+
+    .subscribed-tab {
+        float: right;
+    }
+
+    .all-entries-tab, .subscribed-tab{
+        text-align: center;
+        width: 50%;
+        line-height: 37px;
+    }
+
+    /*Since this is static image so, empty div has been used with background*/
+    .tab-header-frame {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 75px;
+        width: 100%;
+        background: url(../images/tab-header-frame.png) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .tabs{
+        background-color: #f5f5f5;
+    }
+
+    .tabs li {
+        width: 18%;
+        margin: 0 3%;
+        line-height: 38px;
+    }
+
+    .tabs .all-entries-last-tab {
+        margin-right: 7%;
+    }
+
+    .header-bottom-right li {
+        font-size: 11px;
+        margin: 0 15px;
+        padding-left: 25px;
+    }
+
+    .header-bottom-right li.active a {
+        padding-left: 25px;
+    }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*Desktop View*/
+
+
+@media (min-width: 1024px) {
+
+    .sidebar-heading {
+        line-height: 42px;
+        font-size: 15px;
+        padding: 0 12px;
+        color: white;
+        background-color: #2fc1da;
+    }
+
+    /*-----------------------------------------------------------------------------------------*/
+    /*header styles*/
+    .header-top-left img {
+        float: left;
+        width: 100%
+    }
+
+    .mobile-menu{
+        display: none;
+    }
+
+    .mobile-menu-nav{
+        display: none;
+    }
+
+    .header-bottom-left li, .header-bottom-right li {
+        line-height: 40px;
+        float: left;
+        width: auto;
+        list-style: none;
+    }
+
+    .header-bottom-left li {
+        font-size: 13px;
+    }
+
+    .header-bottom-left li a {
+        display: block;
+        padding: 0 15px;
+        color: #101010;
+    }
+
+    .header-bottom-left li a:hover{
+        background-color: #ffffff;
+    }
+
+    .search-form{
+        margin: 0 24px;
+    }
+
+    /*-----------------------------------------------------------------------------------------*/
+    /*body styles*/
+
+    .common-background{
+        background: url("../images/common-background.png") repeat;
+    }
+
+    .left-wrapper li, .right-wrapper li {
+        font-size: 11px;
+        list-style: none;
+    }
+
+    .left-wrapper li:hover, .right-wrapper li:hover {
+        background-color: white;
+    }
+
+    .recent-searches-one li a {
+        background: url("../images/download.png") no-repeat 162px 6px;
+    }
+
+    .recent-searches-two li a {
+        background: url("../images/list.png") no-repeat 162px 6px;
+    }
+
+    .left-wrapper li a, .right-wrapper li a {
+        padding: 0 12px;
+        line-height: 33px;
+        display: block;
+        color: #101010;
+    }
+
+    .tab-header-frame {
+        height: 65px;
+    }
+
+    .tabs li {
+        width: 22%;
+        margin: 0 1%;
+        line-height: 28px;
+    }
+
+    .tabs .all-entries-last-tab {
+        margin-right: 5%;
+    }
+
+    .member-details {
+        width: 83%;
+    }
+
+}

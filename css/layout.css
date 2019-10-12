@@ -1,0 +1,235 @@
+/*-----------------------------------------------------------------------------------------*/
+/*Mobile View*/
+
+.container-block:before, .container-block:after {
+    content: "";
+    display: table;
+}
+
+.container-block:after {
+    clear: both;
+}
+
+.container-block {
+    zoom: 1; /*IE 6& 7*/
+    margin: auto;
+    padding: 0 16px;
+    width: auto;
+}
+
+.header-top{
+    background-color: #7DD9E8;
+}
+
+.header-top-left {
+    float: left;
+    width: 50%;
+}
+
+.header-top-right {
+    float: right;
+    width: 47.1962%;
+    padding-top: 10px;
+}
+
+
+
+.header-bottom {
+    background-color: #f5f5f5;
+    /*margin-bottom: 15px;*/
+}
+
+.header-bottom-left {
+    float: left;
+    width: 20px;
+    display: none;
+}
+
+.header-bottom-right {
+    float: right;
+}
+
+.col3-right {
+    padding: 30px 0 15px 0;
+}
+
+.left-wrapper{
+    display: none;
+}
+
+.right-wrapper{
+    display: none;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*footer styles*/
+.footer {
+    margin-top: 15px;
+    background-color: #727272;
+}
+
+.footer-menu {
+    float: left;
+    width: 100%;
+}
+
+.footer-copyright {
+    float: left;
+    width: 100%;
+}
+
+@media (min-width: 387px) {
+    .header-top-right {
+        padding-top: 15px;
+    }
+}
+
+@media (min-width: 457px) {
+    .header-top-left{
+        width: 48.7965%;
+    }
+
+    .header-top-right{
+        width: 51.2035%;
+    }
+}
+
+@media (min-width: 729px) {
+    .footer-menu {
+        width: 90.2175%;
+    }
+
+    .footer-copyright {
+        float: right;
+        width: 9.7825%;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*Tablet View*/
+
+
+@media (min-width: 768px) {
+    .header-top-left {
+        float: left;
+        width: 78.7760%;
+    }
+
+    .header-top-right{
+        width: 21.2240%;
+        padding-top: 28px;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*Desktop View*/
+
+
+@media (min-width: 1024px) {
+
+    /*-----------------------------------------------------------------------------------------*/
+    /*common styles*/
+    .clear-fix:before, .clear-fix:after, .common-background:before, .common-background:after {
+        content: "";
+        display: table;
+    }
+
+    .clear-fix:after, .common-background:after {
+        clear: both;
+    }
+
+    .clear-fix, .common-background {
+        zoom: 1; /*IE 6& 7*/
+    }
+
+    .container-block {
+        width: 58.625em;
+    }
+
+    /*-----------------------------------------------------------------------------------------*/
+    /*header styles*/
+    .header {
+        margin-bottom: 15px;
+    }
+
+    .header-top {
+        background-color: #7DD9E8;
+    }
+
+    .header-top-left {
+        float: left;
+        width: 65.6311%;
+    }
+
+    .header-top-right {
+        float: right;
+        width: 34.3689%;
+        padding-top: 28px;
+    }
+
+    .header-bottom {
+        background-color: #f5f5f5;
+    }
+
+    .header-bottom-left {
+        display: block;
+        float: left;
+        width: 67.8038%;
+    }
+
+    .header-bottom-right {
+        float: right;
+        width: 32.1962%;
+    }
+
+    /*-----------------------------------------------------------------------------------------*/
+    /*body styles*/
+    .col3-right {
+        display: block;
+        padding: 15px 0;
+    }
+
+    .col2-left {
+        width: 78.6780%;
+        float: left;
+    }
+
+    .right-wrapper {
+        display: block;
+        width: 18.7633%;
+        float: right;
+    }
+
+    .left-wrapper {
+        display: block;
+        width: 26.3878%;
+        float: left;
+    }
+
+    .main-container {
+        width: 70.1912%;
+        float: right;
+    }
+
+    /*-----------------------------------------------------------------------------------------*/
+    /*footer styles*/
+    .footer {
+        background-color: #727272;
+    }
+
+    .footer .container-block{
+        width: 58.625em;
+    }
+
+    .footer-menu {
+        float: left;
+        width: 92.2175%;
+    }
+
+    .footer-copyright {
+        float: right;
+        width: 7.7825%;
+    }
+}
